@@ -100,6 +100,10 @@
   width: fit-content;
   padding: 0.625em 0.75em;
 
+  display: flex;
+  align-items: center;
+  gap: 0.313rem;
+
   border: 1px solid var(--white-color);
   border-radius: 1.25rem;
   font-weight: bold;
@@ -108,9 +112,9 @@
   transition: 0.3s ease-in;
 }
 
-.projects__btn:hover {
-  transform: scale(1.1);
-  box-shadow: 0 0 5px var(--white-color);
+.projects__icon {
+  width: 1.2rem;
+  height: auto;
 }
 
 /* ---------- Botão Deploy ---------- */
@@ -118,24 +122,10 @@
   color: var(--white-color);
 }
 
-.projects__btn--deploy::before {
-  content: url("../../images/partials/projects/link-icon.svg");
-  width: 1.125em;
-  margin-right: 0.313rem;
-  vertical-align: middle;
-}
-
 /* ---------- Botão Repositório ---------- */
 .projects__btn--repository {
   color: var(--dark-color);
   background: var(--white-color);
-}
-
-.projects__btn--repository::before {
-  content: url("../../images/partials/projects/github-icon--black.svg");
-  width: 1.125em;
-  margin-right: 0.313rem;
-  vertical-align: middle;
 }
 
 /* ---------- Chamada para Ver Mais ---------- */
