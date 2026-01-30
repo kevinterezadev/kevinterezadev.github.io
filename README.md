@@ -11,7 +11,7 @@ O objetivo é demonstrar minhas habilidades em desenvolvimento **Front-End**, co
 
 ## 🖼️ Demonstração
 
-![Demonstração do Portfólio](./assets/images/github-readme.jpg)
+![Demonstração do Portfólio](./assets/images/github-readme.png)
 
 ## 🔗 Link para o Deploy
 
