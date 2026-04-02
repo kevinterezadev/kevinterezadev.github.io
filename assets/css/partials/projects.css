@@ -83,6 +83,11 @@
   border: 1px solid #1572b6;
 }
 
+.projects__tech--tailwind {
+  color: #38BDF8;
+  border: 1px solid #38BDF8;
+}
+
 .projects__tech--js {
   color: #f7df1e;
   border: 1px solid #f7df1e;
