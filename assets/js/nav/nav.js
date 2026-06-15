@@ -1,23 +1,4 @@
 // ==============================
-// Alterar Logo
-// ==============================
-function updateLogo() {
-  const logo = document.getElementById("logo");
-
-  if (window.innerWidth > 640) {
-    logo.innerText = "</Kevin>";
-  } else {
-    logo.innerText = "KT";
-  }
-}
-
-// Executa ao carregar a página
-updateLogo();
-
-// Atualiza logo ao redimensionar a janela
-window.addEventListener("resize", updateLogo);
-
-// ==============================
 // Menu Mobile
 // ==============================
 const nav = document.getElementById("nav");

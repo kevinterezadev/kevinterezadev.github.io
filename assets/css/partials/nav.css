@@ -138,10 +138,3 @@
     display: none;
   }
 }
-
-/* Laptops Médios */
-@media (min-width: 64rem) {
-  .nav-content {
-    padding: 0;
-  }
-}
