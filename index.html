@@ -7,8 +7,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description"
     content="Portfólio de Kevin Tereza, desenvolvedor focado em soluções web modernas e funcionais. Veja meus projetos e entre em contato." />
-  <meta name="keywords"
-    content="Kevin Tereza, Desenvolvedor, Software Developer, HTML, CSS, JavaScript, TypeScript, Angular, Portfólio, Git, GitHub, Programação, Web Developer" />
   <meta name="author" content="Kevin Tereza" />
 
   <!-- Favicon -->
@@ -17,19 +15,19 @@
   <!-- Fontes -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
-    rel="stylesheet" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Grotesk:wght@300..700&display=swap"
+    rel="stylesheet">
 
-  <!-- CSS e JS -->
+  <!-- Prism.js -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-okaidia.min.css">
+
+  <!-- CSS e JS geral -->
   <link rel="stylesheet" href="./assets/css/index.css" />
   <script src="./assets/js/index.js" type="module" defer></script>
 
   <!-- Título do site -->
-  <title>Kevin Tereza - Desenvolvedor de Software</title>
+  <title>Kevin Tereza - Desenvolvedor Web</title>
 </head>
 
 <body>
@@ -37,12 +35,12 @@
   <!-- Atualizando -->
 
   <!-- ==============================
-         Header / Navegação
+         Header
          ============================== -->
   <header class="nav" id="nav">
     <div class="nav-content content">
       <a href="/" class="nav__logo" id="logo">
-        <img src="./assets/images/logo.svg" alt="Logo" />
+        <h1 class="nav__logo-text">Kevin<span>.</h1>
       </a>
       <nav role="navigation">
         <ul class="nav__list">
@@ -69,7 +67,7 @@
   </header>
 
   <!-- ==============================
-         Hero Section
+         Hero 
          ============================== -->
   <section class="hero" id="hero">
     <div class="hero-content content">
@@ -77,27 +75,68 @@
         <h1 class="hero__title">
           Kevin <span class="hero__lastname">Tereza</span>
         </h1>
-        <h2 class="hero__subtitle">Desenvolvedor de Software focado em construir<br>soluções modernas e responsivas.
-        </h2>
+        <h2 class="hero__subtitle">Desenvolvedor Web</h2>
+        <p class="hero__fragment">Transformando ideias em experiências através de código.</p>
         <div class="hero__buttons-container">
           <a href="#projects" class="hero__btn hero__btn--projects">Ver projetos</a>
           <a href="#contact" class="hero__btn hero__btn--contact">Entrar em contato</a>
         </div>
-        <div class="hero__tech-container" aria-label="Tecnologias que uso">
-          <img src="./assets/images/partials/hero/icons8-html-5.svg" class="hero__tech" alt="HTML">
-          <img src="./assets/images/partials/hero/icons8-css-logo.svg" class="hero__tech" alt="CSS">
-          <img src="./assets/images/partials/hero/icons8-tailwind-css.svg" class="hero__tech" alt="Tailwind CSS">
-          <img src="./assets/images/partials/hero/icons8-javascript.svg" class="hero__tech" alt="JavaScript">
-          <img src="./assets/images/partials/hero/icons8-typescript.svg" class="hero__tech" alt="TypeScript">
-          <img src="./assets/images/partials/hero/icons8-react.svg" class="hero__tech" alt="React">
-          <img src="./assets/images/partials/hero/icons8-node-js.svg" class="hero__tech" alt="Node JS">
+      </div>
+      <div class="hero__snippets">
+        <div class="hero__snippets--left">
+          <article class="code-window profile">
+            <div class="code-window__header">
+              <div class="code-window__controls">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <span class="code-window__filename">
+                profile.js
+              </span>
+            </div>
+            <pre
+              class="code-window__content language-javascript"><code class="language-javascript" id="js"></code><span class="cursor"></span></pre>
+          </article>
+          <article class="code-window npm">
+            <pre class="code-window__content language-bash"><code class="language-bash" id="bash"></code></pre>
+          </article>
+          <article class="code-window git">
+            <pre
+              class="code-window__content language-git"><code class="language-git" id="git"></code><span class="cursor"></span></pre>
+          </article>
+        </div>
+        <div class="hero__snippets--right">
+          <article class="code-window mockup">
+            <div class="code-window__header">
+              <div class="code-window__controls code-window__controls--browser">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <div class="code-window__searchbar"></div>
+            </div>
+            <div class="code-window__content">
+              <img src="./assets/images/partials/hero/mockup.png" alt="Mockup de um dashboard" />
+            </div>
+          </article>
+          <article class="code-window theme">
+            <div class="code-window__header">
+              <div class="code-window__controls">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <span class="code-window__filename">
+                theme.css
+              </span>
+            </div>
+            <pre
+              class="code-window__content language-css"><code class="language-css" id="css"></code><span class="cursor"></span></pre>
+          </article>
         </div>
       </div>
-      <div class="hero__art">
-        <img src="./assets/images/partials/hero/art.svg" alt="Ilustração de um desenvolvedor programando."
-          class="hero__img" />
-      </div>
-      <img src="./assets/images/partials/hero/chevron-down.svg" alt="Seta indicando para baixo" class="hero__chevron" />
+    </div>
     </div>
   </section>
 
@@ -106,32 +145,7 @@
          ============================== -->
   <section class="about" id="about">
     <div class="about-content content">
-      <h2 class="about__title">Sobre mim</h2>
-      <div class="about__card">
-        <img src="./assets/images/partials/about/developer.jpg" alt="Ilustração de um desenvolvedor programando."
-          class="about__img" />
-        <div class="about__info">
-          <p class="about__label">Prazer, eu sou</p>
-          <h3 class="about__subtitle">Kevin Tereza</h3>
-          <p class="about__text">
-            Sou estudante de <span class="about__text--bold">desenvolvimento de software</span> com foco na <span
-              class="about__text--bold">Web</span>.
-            Atualmente estou aprofundando meus conhecimentos construindo projetos para aplicar o que aprendo na prática.
-            Meu objetivo atual é conquistar minha <span class="about__text--bold">primeira oportunidade</span> na área e
-            contribuir em cenários reais enquanto continuo desenvolvendo minhas habilidades técnicas e profissionais.
-          </p>
 
-          <div class="about__links">
-            <a href="https://www.instagram.com/kevinterezadev/" target="_blank" rel="noopener noreferrer"
-              aria-label="Instagram">
-              <img src="./assets/images/partials/about/instagram-icon.svg" alt="Instagram" class="about__icon" />
-            </a>
-            <a href="https://github.com/kevinterezadev" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-              <img src="./assets/images/partials/about/github-icon--purple.svg" alt="GitHub" class="about__icon" />
-            </a>
-          </div>
-        </div>
-      </div>
     </div>
   </section>
 
@@ -297,6 +311,13 @@
       <p class="footer__text">© <span id="current-year"></span> • Kevin Tereza</p>
     </div>
   </footer>
+
+  <!-- Prism.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-javascript.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-bash.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-git.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-css.min.js"></script>
 </body>
 
 </html>

@@ -5,7 +5,7 @@
   position: sticky;
   top: 0;
   z-index: 10;
-  background-color: var(--navbar-background);
+  background-color: var(--color-bg-surface);
 }
 
 .nav-content {
@@ -13,19 +13,24 @@
   align-items: center;
   justify-content: space-around;
   height: 5.25rem;
-  font-family: "Playfair Display", sans-serif;
+  font-family: "Space Grotesk", sans-serif;
 }
 
-/* ---------- Logo ---------- */
 .nav__logo {
-  color: var(--white-color);
-  font-size: 2.5rem;
-  font-weight: bold;
-  letter-spacing: -7px;
+  color: var(--color-text-primary);
   z-index: 10;
 }
 
-/* ---------- Lista de links ---------- */
+.nav__logo-text {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.nav__logo-text span {
+  color: var(--color-primary);
+  font-size: 2.5rem;
+}
+
 .nav__list {
   position: fixed;
   top: 5.25rem;
@@ -39,8 +44,8 @@
   align-items: center;
   list-style: none;
 
-  background-color: var(--navbar-background);
-  border-top: 1px solid var(--white-color);
+  background-color: var(--color-bg-surface);
+  border-top: 1px solid var(--color-text-primary);
   clip-path: circle(100px at 90% -50%);
   transition: 0.7s ease-in-out;
   pointer-events: none;
@@ -51,9 +56,8 @@
   pointer-events: all;
 }
 
-/* ---------- Links ---------- */
 .nav__link {
-  color: var(--white-color);
+  color: var(--color-text-primary);
   font-size: clamp(1em, 5vw, 1.5em);
   padding: 1em;
   transition: 0.3s;
@@ -61,7 +65,7 @@
 
 .nav__link:hover {
   letter-spacing: 3px;
-  text-shadow: 0 0 5px var(--white-color);
+  text-shadow: 0 0 5px var(--color-text-primary);
 }
 
 /* ---------- Botão Hamburguer ---------- */
@@ -79,7 +83,7 @@
   height: 0.2rem;
   margin-top: 0.438rem;
 
-  background: var(--white-color);
+  background: var(--color-text-primary);
   border-radius: 0.625rem;
   transition: 0.3s;
 }
@@ -95,10 +99,6 @@
 .nav.active .nav__hamburguer-line:nth-of-type(3) {
   transform: translateY(-0.638rem) rotate(-45deg);
 }
-
-/* ==============================
-   Responsividade
-   ============================== */
 
 /* Tablets / iPads */
 @media (min-width: 40rem) {
@@ -120,7 +120,7 @@
     flex-direction: row;
     align-items: stretch;
     justify-content: flex-start;
-    gap: 1.25rem;
+    gap: 2rem;
 
     background: none;
     border: none;
