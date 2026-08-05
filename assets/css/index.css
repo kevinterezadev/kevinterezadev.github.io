@@ -1,7 +1,7 @@
-/* Importando CSS global */
+/* Importa CSS global */
 @import url("../css/global/global.css");
 
-/* Importando CSS das seções/partes */
+/* Importa CSS das seções */
 @import url("../css/partials/nav.css");
 @import url("../css/partials/hero.css");
 @import url("../css/partials/about.css");
