@@ -1,3 +1,204 @@
 /* ==============================
    About Section (Mobile First)
    ============================== */
+
+.about-content {
+  min-height: 100vh;
+  padding-block: var(--sm-padding-section);
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.2rem;
+  width: 100%;
+}
+
+.about__img-container {
+  max-width: 20rem;
+  margin: 0 auto;
+  grid-row: 1;
+}
+
+.about__text-container--first {
+  grid-row: 2;
+}
+
+.about__text-container--second {
+  grid-row: 3;
+}
+
+.about__img {
+  border-radius: 0.75rem;
+  padding: 0.625rem;
+  border: 1px solid var(--color-primary);
+  box-shadow: var(--md-shadow-accent);
+}
+
+.about__img img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+}
+
+.about__img-caption {
+  text-align: center;
+  font-size: 0.76em;
+  color: var(--color-text-secondary);
+  margin-top: 0.75rem;
+  background-color: var(--color-bg-surface);
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+}
+
+.about__title {
+  font-family: var(--font-heading);
+  font-size: clamp(1em, 5vw, 3em);
+  font-weight: normal;
+  color: var(--color-text-secondary);
+}
+
+.about__subtitle {
+  font-family: var(--font-heading);
+  font-size: clamp(1.5rem, 8vw, 4.5rem);
+  margin-bottom: 0.875rem;
+  max-width: 17ch;
+}
+
+.about__text {
+  font-size: clamp(0.875em, 4vw, 1.125em);
+  line-height: 1.5;
+  color: var(--color-text-secondary);
+}
+
+.about__text b {
+  color: var(--color-text-primary);
+}
+
+.about__skills {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: clamp(1em, 3.5vh, 1.5em);
+}
+
+.about__tech {
+  background-color: var(--color-bg-surface);
+  color: var(--color-primary);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-size: clamp(0.75em, 3vw, 1em);
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+
+.about__tech:hover {
+  background-color: var(--color-primary);
+  color: var(--color-text-primary);
+}
+
+/* Tablets / iPads */
+@media (min-width: 40rem) {
+  .about-content {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    min-height: auto;
+    padding-block: var(--md-padding-section);
+  }
+
+  .about__img-container {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .about__text-container--first {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .about__text-container--second {
+    grid-column: 1 / 3;
+    grid-row: 2;
+  }
+
+  .about__img-caption {
+    font-size: clamp(0.75em, 1vw, 0.875em);
+  }
+
+  .about__title {
+    font-size: 1.5em;
+  }
+
+  .about__subtitle {
+    font-size: clamp(2em, 2vw, 3em);
+  }
+
+  .about__text {
+    font-size: clamp(0.75em, 2vw, 1.5em);
+  }
+}
+
+/* Desktops Médios */
+@media (min-width: 64rem) {
+  .about-content {
+    min-height: auto;
+    padding-block: 8em;
+  }
+
+  .about__img-container {
+    grid-column: 1;
+    grid-row: 1 / 3;
+    max-width: 25rem;
+  }
+
+  .about__img-container img {
+    aspect-ratio: 3 / 3.5;
+    object-fit: cover;
+  }
+
+  .about__text-container--first {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .about__text-container--second {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .about__title {
+    font-size: 1.125em;
+  }
+
+  .about__subtitle {
+    font-size: 2.7em;
+  }
+
+  .about__text {
+    font-size: clamp(0.875em, 1.2vw, 1.125em);
+    text-align: left;
+  }
+
+  .about__tech {
+    font-size: 0.75em;
+  }
+}
+
+/* Desktops */
+@media (min-width: 81rem) {
+  .about__subtitle {
+    font-size: 3em;
+  }
+  .about__text {
+    font-size: 1.125em;
+  }
+}
+
+/* 
+<div class="about__skills">
+          <span class="about__tech">HTML</span>
+          <span class="about__tech">CSS</span>
+          <span class="about__tech">Tailwind CSS</span>
+          <span class="about__tech">JavaScript</span>
+          <span class="about__tech">TypeScript</span>
+          <span class="about__tech">React</span>
+        </div>
+*/
