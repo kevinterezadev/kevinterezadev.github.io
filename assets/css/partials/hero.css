@@ -147,8 +147,7 @@
 
 .code-window {
   background: var(--color-bg-surface);
-  background: var(--color-bg-surface);
-  box-shadow: 0 0 40px rgba(225, 29, 72, 0.15);
+  box-shadow: var(--sm-shadow-accent);
 }
 
 .git {
