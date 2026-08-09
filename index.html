@@ -154,7 +154,7 @@
         </div>
       </div>
 
-      <div class="about__text-container about__text-container--first">
+      <article class="about__text-container about__text-container--first">
         <h2 class="about__title">Sobre mim</h2>
         <h3 class="about__subtitle">Transformando ideias em experiências através de código.</h3>
         <p class="about__text">
@@ -162,8 +162,8 @@
           pessoa com deficiência, desenvolvi uma visão de adaptação e persistência que levo comigo em novos desafios.
           Desde então, venho criando projetos, explorando tecnologias e buscando evoluir constantemente como
           desenvolvedor.</p>
-      </div>
-      <div class="about__text-container about__text-container--second">
+      </article>
+      <article class="about__text-container about__text-container--second">
         <p class="about__text">
           Sou curioso, gosto de entender como as coisas funcionam e aprendo muito colocando a mão na massa. Também
           valorizo organização e colaboração, sabendo quando buscar ajuda e quando correr atrás de uma solução por conta
@@ -176,9 +176,8 @@
           <span class="about__tech">Tailwind CSS</span>
           <span class="about__tech">JavaScript</span>
           <span class="about__tech">TypeScript</span>
-          <span class="about__tech">React</span>
         </div>
-      </div>
+      </article>
   </section>
 
   <!-- ==============================
@@ -188,55 +187,25 @@
     <div class="projects-content content">
       <h2 class="projects__title">Projetos em destaque</h2>
       <div class="projects__container">
-
         <article class="projects__item">
-          <img src="./assets/images/partials/projects/first-project.jpg" alt="Demonstração do projeto ConvertaBytes"
-            class="projects__img" />
-          <div class="projects__info">
-            <h3 class="projects__name">ConvertaBytes</h3>
-            <p class="projects__description">
-              Desenvolvimento de um conversor educacional focado em unidades de armazenamento, originado de um projeto
-              premiado em feira matemática. O trabalho recebeu uma versão 2.0 com foco em uma aparência mais moderna e
-              na criação de um sistema de cálculos precisos para facilitar o entendimento de grandezas digitais.
-            </p>
-            <div class="projects__tech-container">
-              <p class="projects__tech projects__tech--html">HTML</p>
-              <p class="projects__tech projects__tech--css">CSS</p>
-              <p class="projects__tech projects__tech--js">JavaScript</p>
+          <div class="projects__img-container">
+            <div class="code-window__header">
+              <div class="code-window__controls code-window__controls--browser">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <div class="code-window__searchbar"></div>
             </div>
-            <div class="projects__links">
-              <a href="https://converta-bytes.vercel.app/" class="projects__btn projects__btn--deploy" target="_blank"
-                rel="noopener noreferrer">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="projects__icon" viewBox="0 0 16 16">
-                  <path
-                    d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1 1 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4 4 0 0 1-.128-1.287z" />
-                  <path
-                    d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243z" />
-                </svg>
-                Ver projeto
-              </a>
-              <a href="https://github.com/kevinterezadev/converta-bytes" class="projects__btn projects__btn--repository"
-                target="_blank" rel="noopener noreferrer">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="projects__icon" viewBox="0 0 16 16">
-                  <path
-                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
-                </svg>
-                Repositório
-              </a>
-            </div>
+            <img src="./assets/images/partials/projects/da-audio.jpg" alt="Foto do projeto D.A Áudio" />
           </div>
-        </article>
-
-        <article class="projects__item">
-          <img src="./assets/images/partials/projects/second-project.jpg" alt="Demonstração do projeto The News Clone"
-            class="projects__img" />
           <div class="projects__info">
-            <h3 class="projects__name">D.A Áudio (Freelance)</h3>
+            <span class="projects__type">Projeto Freelance</span>
+            <h3 class="projects__name">D.A Áudio</h3>
             <p class="projects__description">
-              Criação de site institucional de página única para a D.A Áudio, empresa de sonorização profissional. O
-              projeto incluiu o design visual focado em usabilidade e o desenvolvimento de uma interface responsiva para
-              a apresentação estratégica de serviços em eventos.
-            </p>
+              Desenvolvimento de site institucional responsivo para a D.A Áudio, com foco na apresentação de serviços e
+              usabilidade.</p>
+            <h4 class="projects__stack">Tecnologias</h4>
             <div class="projects__tech-container">
               <p class="projects__tech projects__tech--html">HTML</p>
               <p class="projects__tech projects__tech--css">CSS</p>
@@ -244,53 +213,73 @@
             </div>
             <div class="projects__links">
               <a href="https://da-audio.vercel.app/" class="projects__btn projects__btn--deploy" target="_blank"
-                rel="noopener noreferrer">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="projects__icon" viewBox="0 0 16 16">
-                  <path
-                    d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1 1 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4 4 0 0 1-.128-1.287z" />
-                  <path
-                    d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243z" />
-                </svg>
-                Ver projeto
-              </a>
+                rel="noopener noreferrer">Ver Projeto</a>
+              <a href="https://www.linkedin.com/posts/kevinterezadev_minha-primeira-experi%C3%AAncia-profissional-ugcPost-7423813216448942080-7Z67/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEdFh4wBzwATSIEwNTL7JEASRWp4fNFK2lI"
+                class="projects__btn projects__btn--repository" target="_blank" rel="noopener noreferrer">Post no
+                LinkedIn</a>
             </div>
           </div>
         </article>
-
         <article class="projects__item">
-          <img src="./assets/images/partials/projects/third-project.jpg" alt="Demonstração do projeto EasyStay"
-            class="projects__img" />
+          <div class="projects__img-container">
+            <div class="code-window__header">
+              <div class="code-window__controls code-window__controls--browser">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <div class="code-window__searchbar"></div>
+            </div>
+            <img src="./assets/images/partials/projects/convertabytes.jpg" alt="Foto do projeto ConvertaBytes" />
+          </div>
           <div class="projects__info">
-            <h3 class="projects__name">EasyStay</h3>
+            <span class="projects__type">Projeto Pessoal</span>
+            <h3 class="projects__name">ConvertaBytes</h3>
             <p class="projects__description">
-              Mini projeto estático desenvolvido como parte de um curso de Tailwind CSS. O objetivo foi simular um site
-              de busca e apresentação de hotéis, aplicando conceitos de layout responsivo, grid e flexbox, espaçamentos
-              e tipografia usando o Tailwind CSS.
-            </p>
+              Conversor educacional de unidades de armazenamento, premiado em feira matemática e posteriormente
+              modernizado com cálculos precisos e nova interface.</p>
+            <h4 class="projects__stack">Tecnologias</h4>
             <div class="projects__tech-container">
               <p class="projects__tech projects__tech--html">HTML</p>
-              <p class="projects__tech projects__tech--tailwind">Tailwind CSS</p>
+              <p class="projects__tech projects__tech--css">CSS</p>
               <p class="projects__tech projects__tech--js">JavaScript</p>
             </div>
             <div class="projects__links">
+              <a href="https://converta-bytes.vercel.app/" class="projects__btn projects__btn--deploy" target="_blank"
+                rel="noopener noreferrer">Ver Projeto</a>
+              <a href="https://github.com/kevinterezadev/converta-bytes" class="projects__btn projects__btn--repository"
+                target="_blank" rel="noopener noreferrer">Repositório</a>
+            </div>
+          </div>
+        </article>
+        <article class="projects__item">
+          <div class="projects__img-container">
+            <div class="code-window__header">
+              <div class="code-window__controls code-window__controls--browser">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <div class="code-window__searchbar"></div>
+            </div>
+            <img src="./assets/images/partials/projects/easystay.jpg" alt="Foto do projeto EasyStay" />
+          </div>
+          <div class="projects__info">
+            <span class="projects__type">Projeto de Estudo</span>
+            <h3 class="projects__name">EasyStay</h3>
+            <p class="projects__description">
+              Projeto de estudo em Tailwind CSS, desenvolvido para praticar layouts responsivos, grid, flexbox e
+              composição de interfaces.</p>
+            <h4 class="projects__stack">Tecnologias</h4>
+            <div class="projects__tech-container">
+              <p class="projects__tech projects__tech--html">HTML</p>
+              <p class="projects__tech projects__tech--tailwind">Tailwind CSS</p>
+            </div>
+            <div class="projects__links">
               <a href="https://easy-stay-eight.vercel.app/" class="projects__btn projects__btn--deploy" target="_blank"
-                rel="noopener noreferrer">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="projects__icon" viewBox="0 0 16 16">
-                  <path
-                    d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1 1 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4 4 0 0 1-.128-1.287z" />
-                  <path
-                    d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243z" />
-                </svg>
-                Ver projeto
-              </a>
+                rel="noopener noreferrer">Ver Projeto</a>
               <a href="https://github.com/kevinterezadev/easy-stay" class="projects__btn projects__btn--repository"
-                target="_blank" rel="noopener noreferrer">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="projects__icon" viewBox="0 0 16 16">
-                  <path
-                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
-                </svg>
-                Repositório
-              </a>
+                target="_blank" rel="noopener noreferrer">Repositório</a>
             </div>
           </div>
         </article>
