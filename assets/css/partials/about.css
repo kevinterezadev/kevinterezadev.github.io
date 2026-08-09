@@ -63,7 +63,7 @@
 }
 
 .about__text {
-  font-size: clamp(0.875em, 4vw, 1.125em);
+  font-size: var(--sm-font-size);
   line-height: 1.5;
   color: var(--color-text-secondary);
 }
@@ -132,7 +132,7 @@
   }
 
   .about__text {
-    font-size: clamp(0.75em, 2vw, 1.5em);
+    font-size: var(--md-font-size);
   }
 }
 
@@ -191,14 +191,3 @@
     font-size: 1.125em;
   }
 }
-
-/* 
-<div class="about__skills">
-          <span class="about__tech">HTML</span>
-          <span class="about__tech">CSS</span>
-          <span class="about__tech">Tailwind CSS</span>
-          <span class="about__tech">JavaScript</span>
-          <span class="about__tech">TypeScript</span>
-          <span class="about__tech">React</span>
-        </div>
-*/

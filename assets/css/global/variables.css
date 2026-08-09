@@ -7,6 +7,10 @@
   --font-heading: "Space Grotesk", sans-serif;
   --font-body: "Inter", sans-serif;
 
+  /* ---------- Tamanho de Texto ---------- */
+  --sm-font-size: clamp(0.875em, 4vw, 1.125em);
+  --md-font-size: clamp(0.75em, 2vw, 1.5em);
+
   /* ---------- Cores ---------- */
   --color-primary: #e11d48;
   --color-text-primary: #f5f5f5;
