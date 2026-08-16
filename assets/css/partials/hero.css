@@ -19,7 +19,6 @@
 }
 
 .hero__title {
-  font-family: var(--font-heading);
   font-size: clamp(2.5em, 6vw + 2em, 4.5em);
   line-height: 1;
   margin-bottom: 1rem;
@@ -31,7 +30,6 @@
 
 .hero__subtitle {
   font-weight: normal;
-  font-family: var(--font-heading);
   color: var(--color-text-secondary);
   font-size: clamp(1.5em, 6vw, 4em);
 }

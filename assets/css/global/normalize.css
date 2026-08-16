@@ -23,6 +23,12 @@ body {
   color: var(--color-text-primary);
 }
 
+h1,
+h2,
+h3 {
+  font-family: var(--font-heading);
+}
+
 a {
   text-decoration: none;
 }
@@ -30,6 +36,20 @@ a {
 .content {
   max-width: 90vw;
   margin: 0 auto;
+}
+
+.about-content,
+.projects-content,
+.contact-content {
+  padding-block: var(--padding-section);
+}
+
+@media (min-width: 40rem) {
+  .about-content,
+  .projects-content,
+  .contact-content {
+    padding: var(--padding-section);
+  }
 }
 
 /* Content em desktops grandes */

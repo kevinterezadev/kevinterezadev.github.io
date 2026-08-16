@@ -4,7 +4,6 @@
 
 .about-content {
   min-height: 100vh;
-  padding-block: var(--sm-padding-section);
   display: grid;
   grid-template-columns: 1fr;
   gap: 1.2rem;
@@ -49,7 +48,6 @@
 }
 
 .about__title {
-  font-family: var(--font-heading);
   font-size: clamp(1em, 5vw, 3em);
   font-weight: normal;
   color: var(--color-text-secondary);
@@ -57,13 +55,13 @@
 
 .about__subtitle {
   font-family: var(--font-heading);
-  font-size: clamp(1.5rem, 8vw, 4.5rem);
+  font-size: var(--sm-title-size);
   margin-bottom: 0.875rem;
   max-width: 17ch;
 }
 
 .about__text {
-  font-size: var(--sm-font-size);
+  font-size: var(--sm-text-size);
   line-height: 1.5;
   color: var(--color-text-secondary);
 }
@@ -101,7 +99,6 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
     min-height: auto;
-    padding-block: var(--md-padding-section);
   }
 
   .about__img-container {
@@ -137,7 +134,7 @@
   }
 
   .about__text {
-    font-size: var(--md-font-size);
+    font-size: var(--md-text-size);
   }
 }
 
@@ -145,7 +142,6 @@
 @media (min-width: 64rem) {
   .about-content {
     min-height: auto;
-    padding-block: 8em;
   }
 
   .about__img-container {
