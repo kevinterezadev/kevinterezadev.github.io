@@ -67,7 +67,12 @@
 }
 
 .hero__btn:hover {
-  transform: scale(1.1);
+  transform: translateY(-2px);
+  box-shadow: 0 0.5rem 1.5rem rgba(225, 29, 72, 0.25);
+}
+
+.hero__btn:active {
+  transform: translateY(0) scale(0.97);
 }
 
 .hero__btn::before {
@@ -133,14 +138,44 @@
   height: 80%;
   top: 10%;
   left: 10%;
+
   background: radial-gradient(
     circle,
-    rgba(225, 29, 72, 0.55),
-    rgba(190, 18, 60, 0.25) 35%,
+    rgba(225, 29, 72, 0.65),
+    rgba(190, 18, 60, 0.3) 35%,
     transparent 70%
   );
+
   filter: blur(70px);
   z-index: -1;
+
+  animation: hero-glow 5s ease-in-out infinite;
+}
+
+@keyframes hero-glow {
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
+
+  20% {
+    transform: translate(35px, -20px) scale(1.08);
+  }
+
+  40% {
+    transform: translate(-20px, -35px) scale(0.95);
+  }
+
+  60% {
+    transform: translate(-40px, 20px) scale(1.1);
+  }
+
+  80% {
+    transform: translate(20px, 35px) scale(0.97);
+  }
+
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
 }
 
 .code-window {
