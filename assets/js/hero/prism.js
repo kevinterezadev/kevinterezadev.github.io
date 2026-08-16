@@ -11,7 +11,7 @@ const jsCode = `const developer = {
 
 const bashCode = `$ npm run build
 
-> portfolio@1.0.0 build
+> portfolio@2.0.0 build
 
 ✓ Compiling assets
 ✓ Optimizing files
