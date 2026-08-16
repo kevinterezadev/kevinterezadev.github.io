@@ -7,8 +7,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description"
     content="Portfólio de Kevin Tereza, desenvolvedor focado em soluções web modernas e funcionais. Veja meus projetos e entre em contato." />
-  <meta name="keywords"
-    content="Kevin Tereza, Desenvolvedor, Software Developer, HTML, CSS, JavaScript, TypeScript, Angular, Portfólio, Git, GitHub, Programação, Web Developer" />
   <meta name="author" content="Kevin Tereza" />
 
   <!-- Favicon -->
@@ -17,29 +15,32 @@
   <!-- Fontes -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
-    rel="stylesheet" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Grotesk:wght@300..700&display=swap"
+    rel="stylesheet">
 
-  <!-- CSS e JS -->
+  <!-- Prism.js -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-okaidia.min.css">
+
+  <!-- CSS e JS geral -->
   <link rel="stylesheet" href="./assets/css/index.css" />
   <script src="./assets/js/index.js" type="module" defer></script>
 
   <!-- Título do site -->
-  <title>Kevin Tereza - Desenvolvedor de Software</title>
+  <title>Kevin Tereza - Desenvolvedor Web</title>
 </head>
 
 <body>
+
+  <!-- Atualizando -->
+
   <!-- ==============================
-         Header / Navegação
+         Header
          ============================== -->
   <header class="nav" id="nav">
     <div class="nav-content content">
       <a href="/" class="nav__logo" id="logo">
-        <img src="./assets/images/logo.svg" alt="Logo" />
+        <h1 class="nav__logo-text">Kevin<span>.</h1>
       </a>
       <nav role="navigation">
         <ul class="nav__list">
@@ -66,7 +67,7 @@
   </header>
 
   <!-- ==============================
-         Hero Section
+         Hero 
          ============================== -->
   <section class="hero" id="hero">
     <div class="hero-content content">
@@ -74,27 +75,69 @@
         <h1 class="hero__title">
           Kevin <span class="hero__lastname">Tereza</span>
         </h1>
-        <h2 class="hero__subtitle">Desenvolvedor de Software focado em construir<br>soluções modernas e responsivas.
-        </h2>
+        <h2 class="hero__subtitle">Desenvolvedor Web</h2>
+        <p class="hero__fragment">Transformando ideias em experiências através de código.</p>
         <div class="hero__buttons-container">
           <a href="#projects" class="hero__btn hero__btn--projects">Ver projetos</a>
           <a href="#contact" class="hero__btn hero__btn--contact">Entrar em contato</a>
         </div>
-        <div class="hero__tech-container" aria-label="Tecnologias que uso">
-          <img src="./assets/images/partials/hero/icons8-html-5.svg" class="hero__tech" alt="HTML">
-          <img src="./assets/images/partials/hero/icons8-css-logo.svg" class="hero__tech" alt="CSS">
-          <img src="./assets/images/partials/hero/icons8-tailwind-css.svg" class="hero__tech" alt="Tailwind CSS">
-          <img src="./assets/images/partials/hero/icons8-javascript.svg" class="hero__tech" alt="JavaScript">
-          <img src="./assets/images/partials/hero/icons8-typescript.svg" class="hero__tech" alt="TypeScript">
-          <img src="./assets/images/partials/hero/icons8-react.svg" class="hero__tech" alt="React">
-          <img src="./assets/images/partials/hero/icons8-node-js.svg" class="hero__tech" alt="Node JS">
+      </div>
+      <div class="hero__snippets">
+        <div class="hero__snippets--left">
+          <article class="code-window profile">
+            <div class="code-window__header">
+              <div class="code-window__controls">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <span class="code-window__filename">
+                profile.js
+              </span>
+            </div>
+            <pre class="code-window__content language-javascript"
+              tabindex="-1"><code class="language-javascript" id="js"></code><span class="cursor"></span></pre>
+          </article>
+          <article class="code-window npm">
+            <pre class="code-window__content language-bash"
+              tabindex="-1"><code class="language-bash" id="bash"></code></pre>
+          </article>
+          <article class="code-window git">
+            <pre class="code-window__content language-git"
+              tabindex="-1"><code class="language-git" id="git"></code><span class="cursor"></span></pre>
+          </article>
+        </div>
+        <div class="hero__snippets--right">
+          <article class="code-window mockup">
+            <div class="code-window__header">
+              <div class="code-window__controls code-window__controls--browser">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <div class="code-window__searchbar"></div>
+            </div>
+            <div class="code-window__content">
+              <img src="./assets/images/partials/hero/mockup.png" alt="Mockup de um dashboard" />
+            </div>
+          </article>
+          <article class="code-window theme">
+            <div class="code-window__header">
+              <div class="code-window__controls">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <span class="code-window__filename">
+                theme.css
+              </span>
+            </div>
+            <pre class="code-window__content language-css"
+              tabindex="-1"><code class="language-css" id="css"></code><span class="cursor"></span></pre>
+          </article>
         </div>
       </div>
-      <div class="hero__art">
-        <img src="./assets/images/partials/hero/art.svg" alt="Ilustração de um desenvolvedor programando."
-          class="hero__img" />
-      </div>
-      <img src="./assets/images/partials/hero/chevron-down.svg" alt="Seta indicando para baixo" class="hero__chevron" />
+    </div>
     </div>
   </section>
 
@@ -103,33 +146,39 @@
          ============================== -->
   <section class="about" id="about">
     <div class="about-content content">
-      <h2 class="about__title">Sobre mim</h2>
-      <div class="about__card">
-        <img src="./assets/images/partials/about/developer.jpg" alt="Ilustração de um desenvolvedor programando."
-          class="about__img" />
-        <div class="about__info">
-          <p class="about__label">Prazer, eu sou</p>
-          <h3 class="about__subtitle">Kevin Tereza</h3>
-          <p class="about__text">
-            Sou estudante de <span class="about__text--bold">desenvolvimento de software</span> com foco na <span
-              class="about__text--bold">Web</span>.
-            Atualmente estou aprofundando meus conhecimentos construindo projetos para aplicar o que aprendo na prática.
-            Meu objetivo atual é conquistar minha <span class="about__text--bold">primeira oportunidade</span> na área e
-            contribuir em cenários reais enquanto continuo desenvolvendo minhas habilidades técnicas e profissionais.
-          </p>
-
-          <div class="about__links">
-            <a href="https://www.instagram.com/kevinterezadev/" target="_blank" rel="noopener noreferrer"
-              aria-label="Instagram">
-              <img src="./assets/images/partials/about/instagram-icon.svg" alt="Instagram" class="about__icon" />
-            </a>
-            <a href="https://github.com/kevinterezadev" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-              <img src="./assets/images/partials/about/github-icon--purple.svg" alt="GitHub" class="about__icon" />
-            </a>
-          </div>
+      <div class="about__img-container">
+        <div class="about__img">
+          <img src="./assets/images/partials/about/me.jpg" alt="Foto de Kevin Tereza" />
+        </div>
+        <div class="about__img-caption">
+          <span>Kevin Tereza | Desenvolvedor Web | Criciúma</span>
         </div>
       </div>
-    </div>
+
+      <article class="about__text-container about__text-container--first">
+        <h2 class="about__title">Sobre mim</h2>
+        <h3 class="about__subtitle">Transformando ideias em experiências através de código.</h3>
+        <p class="about__text">
+          Minha jornada na programação começou pela vontade de construir coisas e transformar ideias em realidade. Como
+          pessoa com deficiência, desenvolvi uma visão de adaptação e persistência que levo comigo em novos desafios.
+          Desde então, venho criando projetos, explorando tecnologias e buscando evoluir constantemente como
+          desenvolvedor.</p>
+      </article>
+      <article class="about__text-container about__text-container--second">
+        <p class="about__text">
+          Sou curioso, gosto de entender como as coisas funcionam e aprendo muito colocando a mão na massa. Também
+          valorizo organização e colaboração, sabendo quando buscar ajuda e quando correr atrás de uma solução por conta
+          própria.
+        </p>
+
+        <div class="about__skills">
+          <span class="about__tech">HTML</span>
+          <span class="about__tech">CSS</span>
+          <span class="about__tech">Tailwind CSS</span>
+          <span class="about__tech">JavaScript</span>
+          <span class="about__tech">TypeScript</span>
+        </div>
+      </article>
   </section>
 
   <!-- ==============================
@@ -139,55 +188,25 @@
     <div class="projects-content content">
       <h2 class="projects__title">Projetos em destaque</h2>
       <div class="projects__container">
-
         <article class="projects__item">
-          <img src="./assets/images/partials/projects/first-project.jpg" alt="Demonstração do projeto ConvertaBytes"
-            class="projects__img" />
-          <div class="projects__info">
-            <h3 class="projects__name">ConvertaBytes</h3>
-            <p class="projects__description">
-              Desenvolvimento de um conversor educacional focado em unidades de armazenamento, originado de um projeto
-              premiado em feira matemática. O trabalho recebeu uma versão 2.0 com foco em uma aparência mais moderna e
-              na criação de um sistema de cálculos precisos para facilitar o entendimento de grandezas digitais.
-            </p>
-            <div class="projects__tech-container">
-              <p class="projects__tech projects__tech--html">HTML</p>
-              <p class="projects__tech projects__tech--css">CSS</p>
-              <p class="projects__tech projects__tech--js">JavaScript</p>
+          <div class="projects__img-container">
+            <div class="code-window__header">
+              <div class="code-window__controls code-window__controls--browser">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <div class="code-window__searchbar"></div>
             </div>
-            <div class="projects__links">
-              <a href="https://converta-bytes.vercel.app/" class="projects__btn projects__btn--deploy" target="_blank"
-                rel="noopener noreferrer">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="projects__icon" viewBox="0 0 16 16">
-                  <path
-                    d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1 1 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4 4 0 0 1-.128-1.287z" />
-                  <path
-                    d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243z" />
-                </svg>
-                Ver projeto
-              </a>
-              <a href="https://github.com/kevinterezadev/converta-bytes" class="projects__btn projects__btn--repository"
-                target="_blank" rel="noopener noreferrer">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="projects__icon" viewBox="0 0 16 16">
-                  <path
-                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
-                </svg>
-                Repositório
-              </a>
-            </div>
+            <img src="./assets/images/partials/projects/da-audio.jpg" alt="Foto do projeto D.A Áudio" />
           </div>
-        </article>
-
-        <article class="projects__item">
-          <img src="./assets/images/partials/projects/second-project.jpg" alt="Demonstração do projeto The News Clone"
-            class="projects__img" />
           <div class="projects__info">
-            <h3 class="projects__name">D.A Áudio (Freelance)</h3>
+            <span class="projects__type">Projeto Freelance</span>
+            <h3 class="projects__name">D.A Áudio</h3>
             <p class="projects__description">
-              Criação de site institucional de página única para a D.A Áudio, empresa de sonorização profissional. O
-              projeto incluiu o design visual focado em usabilidade e o desenvolvimento de uma interface responsiva para
-              a apresentação estratégica de serviços em eventos.
-            </p>
+              Desenvolvimento de site institucional responsivo para a D.A Áudio, com foco na apresentação de serviços e
+              usabilidade.</p>
+            <h4 class="projects__stack">Tecnologias</h4>
             <div class="projects__tech-container">
               <p class="projects__tech projects__tech--html">HTML</p>
               <p class="projects__tech projects__tech--css">CSS</p>
@@ -195,53 +214,73 @@
             </div>
             <div class="projects__links">
               <a href="https://da-audio.vercel.app/" class="projects__btn projects__btn--deploy" target="_blank"
-                rel="noopener noreferrer">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="projects__icon" viewBox="0 0 16 16">
-                  <path
-                    d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1 1 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4 4 0 0 1-.128-1.287z" />
-                  <path
-                    d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243z" />
-                </svg>
-                Ver projeto
-              </a>
+                rel="noopener noreferrer">Ver Projeto</a>
+              <a href="https://www.linkedin.com/posts/kevinterezadev_minha-primeira-experi%C3%AAncia-profissional-ugcPost-7423813216448942080-7Z67/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEdFh4wBzwATSIEwNTL7JEASRWp4fNFK2lI"
+                class="projects__btn projects__btn--repository" target="_blank" rel="noopener noreferrer">Post no
+                LinkedIn</a>
             </div>
           </div>
         </article>
-
         <article class="projects__item">
-          <img src="./assets/images/partials/projects/third-project.jpg" alt="Demonstração do projeto EasyStay"
-            class="projects__img" />
+          <div class="projects__img-container">
+            <div class="code-window__header">
+              <div class="code-window__controls code-window__controls--browser">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <div class="code-window__searchbar"></div>
+            </div>
+            <img src="./assets/images/partials/projects/convertabytes.jpg" alt="Foto do projeto ConvertaBytes" />
+          </div>
           <div class="projects__info">
-            <h3 class="projects__name">EasyStay</h3>
+            <span class="projects__type">Projeto Pessoal</span>
+            <h3 class="projects__name">ConvertaBytes</h3>
             <p class="projects__description">
-              Mini projeto estático desenvolvido como parte de um curso de Tailwind CSS. O objetivo foi simular um site
-              de busca e apresentação de hotéis, aplicando conceitos de layout responsivo, grid e flexbox, espaçamentos
-              e tipografia usando o Tailwind CSS.
-            </p>
+              Conversor educacional de unidades de armazenamento, premiado em feira matemática e posteriormente
+              modernizado com cálculos precisos e nova interface.</p>
+            <h4 class="projects__stack">Tecnologias</h4>
             <div class="projects__tech-container">
               <p class="projects__tech projects__tech--html">HTML</p>
-              <p class="projects__tech projects__tech--tailwind">Tailwind CSS</p>
+              <p class="projects__tech projects__tech--css">CSS</p>
               <p class="projects__tech projects__tech--js">JavaScript</p>
             </div>
             <div class="projects__links">
+              <a href="https://converta-bytes.vercel.app/" class="projects__btn projects__btn--deploy" target="_blank"
+                rel="noopener noreferrer">Ver Projeto</a>
+              <a href="https://github.com/kevinterezadev/converta-bytes" class="projects__btn projects__btn--repository"
+                target="_blank" rel="noopener noreferrer">Repositório</a>
+            </div>
+          </div>
+        </article>
+        <article class="projects__item">
+          <div class="projects__img-container">
+            <div class="code-window__header">
+              <div class="code-window__controls code-window__controls--browser">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <div class="code-window__searchbar"></div>
+            </div>
+            <img src="./assets/images/partials/projects/easystay.jpg" alt="Foto do projeto EasyStay" />
+          </div>
+          <div class="projects__info">
+            <span class="projects__type">Projeto de Estudo</span>
+            <h3 class="projects__name">EasyStay</h3>
+            <p class="projects__description">
+              Projeto de estudo em Tailwind CSS, desenvolvido para praticar layouts responsivos, grid, flexbox e
+              composição de interfaces.</p>
+            <h4 class="projects__stack">Tecnologias</h4>
+            <div class="projects__tech-container">
+              <p class="projects__tech projects__tech--html">HTML</p>
+              <p class="projects__tech projects__tech--tailwind">Tailwind CSS</p>
+            </div>
+            <div class="projects__links">
               <a href="https://easy-stay-eight.vercel.app/" class="projects__btn projects__btn--deploy" target="_blank"
-                rel="noopener noreferrer">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="projects__icon" viewBox="0 0 16 16">
-                  <path
-                    d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1 1 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4 4 0 0 1-.128-1.287z" />
-                  <path
-                    d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243z" />
-                </svg>
-                Ver projeto
-              </a>
+                rel="noopener noreferrer">Ver Projeto</a>
               <a href="https://github.com/kevinterezadev/easy-stay" class="projects__btn projects__btn--repository"
-                target="_blank" rel="noopener noreferrer">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="projects__icon" viewBox="0 0 16 16">
-                  <path
-                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
-                </svg>
-                Repositório
-              </a>
+                target="_blank" rel="noopener noreferrer">Repositório</a>
             </div>
           </div>
         </article>
@@ -257,31 +296,15 @@
   <section class="contact" id="contact">
     <div class="contact-content content">
       <h2 class="contact__title">Contato</h2>
-      <div class="contact__container">
-        <div class="contact__info">
-          <p class="contact__text">
-            Estou aberto a novas oportunidades.<br />Entre em contato para
-            falar sobre projetos ou tirar dúvidas.
-          </p>
-          <div class="contact__item">
-            <img src="./assets/images/partials/contact/linkedin-icon.svg" alt="LinkedIn" class="contact__icon" />
-            <div class="contact__details">
-              <h3 class="contact__subtitle">LinkedIn</h3>
-              <a href="https://www.linkedin.com/in/kevinterezadev/" class="contact__link" target="_blank"
-                rel="noopener noreferrer">linkedin.com/in/kevintereza</a>
-            </div>
-          </div>
-          <div class="contact__item">
-            <img src="./assets/images/partials/contact/envelope-icon.svg" alt="Email" class="contact__icon" />
-            <div class="contact__details">
-              <h3 class="contact__subtitle">Email</h3>
-              <a href="mailto:kevinterezadev@gmail.com?subject=Contato%20via%20Portfólio&body=Ol%C3%A1%20Kevin,%20tudo%20bem?%20Vi%20seu%20portf%C3%B3lio%20e..."
-                class="contact__link">kevinterezadev@gmail.com</a>
-            </div>
-          </div>
-        </div>
-        <img src="./assets/images/partials/contact/art.svg" alt="Ilustração de uma pessoa ao lado de uma mensagem"
-          class="contact__img" />
+      <div>
+        <h2 class="contact__subtitle">Tem uma oportunidade em mente?</h2>
+        <a href="mailto:kevinterezadev@gmail.com?subject=Contato%20via%20Portfólio&body=Olá,%20Kevin!%20Tudo%20bem?%20Conheci%20seu%20trabalho%20através%20do%20seu%20portfólio%20e%20gostaria%20de%20conversar%20com%20você."
+          class="contact__cta">Vamos
+          conversar!</a>
+        <h3 class="contact__social">Conecte-se comigo</h3>
+        <a href="https://github.com/kevinterezadev" class="contact__link">GitHub</a>
+        <span class="contact__separator">|</span>
+        <a href="https://www.linkedin.com/in/kevinterezadev/" class="contact__link">LinkedIn</a>
       </div>
     </div>
   </section>
@@ -294,6 +317,13 @@
       <p class="footer__text">© <span id="current-year"></span> • Kevin Tereza</p>
     </div>
   </footer>
+
+  <!-- Prism.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-javascript.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-bash.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-git.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-css.min.js"></script>
 </body>
 
 </html>

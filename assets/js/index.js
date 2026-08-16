@@ -1,2 +1,3 @@
 import "./nav/nav.js";
-import "./currentYear/currentYear.js";
+import "./hero/prism.js";
+import "./footer/currentYear.js";
