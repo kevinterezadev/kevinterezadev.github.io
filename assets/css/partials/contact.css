@@ -1,101 +1,133 @@
 /* ==============================
    Contact Section (Mobile First)
    ============================== */
-.contact {
-  background: var(--contact-background);
-}
 
-/* ---------- Container Principal ---------- */
 .contact-content {
-  padding: var(--section-padding);
-
+  text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
-  color: var(--white-color);
 }
 
-/* ---------- Título ---------- */
 .contact__title {
-  margin-bottom: var(--title-padding);
-
-  font-size: var(--section-title-size);
-  font-family: var(--primary-font);
+  font-size: var(--sm-title-size);
+  margin-bottom: 2rem;
 }
 
-/* ---------- Container Interno ---------- */
-.contact__container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 1.875rem;
+.contact__subtitle,
+.contact__social {
+  font-size: clamp(1em, 6vw, 4em);
 }
 
-/* ---------- Texto Principal ---------- */
-.contact__text {
-  font-size: clamp(0.875em, 4vw, 1.125em);
+.contact__cta {
+  background-color: var(--color-primary);
+  color: var(--color-text-primary);
+  text-transform: uppercase;
+  font-weight: 600;
+  padding-block: clamp(1rem, 4vw, 2rem);
+  padding-inline: clamp(1.25rem, 8vw, 5rem);
+  font-size: clamp(1em, 0.625em + 2vw, 4em);
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
+  border-radius: 2rem;
+  box-shadow: var(--md-shadow-accent);
+  outline: 1px solid var(--color-primary);
+  outline-offset: 0.25rem;
+  transition: 0.25s ease;
+  margin-block: 2rem;
 }
 
-/* ---------- Itens de Contato ---------- */
-.contact__item {
-  display: flex;
-  align-items: center;
-  gap: 0.625rem;
-  margin-top: 1.25rem;
+.contact__cta:hover {
+  transform: translateY(-4px);
+  outline-offset: 0.5rem;
+
+  box-shadow:
+    0 0 2rem rgba(225, 29, 72, 0.4),
+    0 0 5rem rgba(225, 29, 72, 0.5),
+    0 0 9rem rgba(225, 29, 72, 0.3);
 }
 
-/* ---------- Ícones ---------- */
-.contact__icon {
-  padding: 1rem;
-  border-radius: var(--default-radius);
-  background-color: var(--purple-color);
-}
-
-/* ---------- Subtítulo e Link ---------- */
-.contact__subtitle {
-  font-size: 1.125em;
-  margin-bottom: 0.313rem;
+.contact__social {
+  margin-bottom: 1rem;
 }
 
 .contact__link {
-  font-size: 0.875em;
-  color: var(--gray-color);
+  color: var(--color-text-secondary);
+  text-decoration: underline;
+  font-size: clamp(1em, 4vw, 2rem);
+  transition: 0.3s ease-in-out;
 }
 
-/* ---------- Imagem ---------- */
-.contact__img {
-  max-width: 80%;
+.contact__link:hover {
+  color: var(--color-primary);
 }
 
-/* ==============================
-   Responsividade
-   ============================== */
+.contact__separator {
+  color: var(--color-text-secondary);
+  font-size: clamp(1em, 3.5vw, 2rem);
+  padding-inline: clamp(0.25rem, 2vw, 1rem);
+}
 
 /* Tablets / iPads */
 @media (min-width: 40rem) {
-  .contact-content {
-    max-width: 70%;
+  .contact__title {
+    font-size: var(--md-title-size);
   }
 
-  .contact__container {
-    flex-direction: row;
+  .contact__subtitle {
+    font-size: clamp(1.5em, 4vw, 3.5em);
+    max-width: 19ch;
   }
 
-  .contact__text {
-    font-size: clamp(0.875em, 1.5vw, 1.25em);
+  .contact__cta {
+    padding-block: 1.2rem;
+    font-size: clamp(1em, 2.5vw, 3em);
   }
 
-  .contact__img {
-    max-width: 50%;
+  .contact__social {
+    font-size: clamp(1em, 3.5vw, 3em);
+  }
+
+  .contact__link,
+  .contact__separator {
+    font-size: clamp(1em, 3vw, 2rem);
   }
 }
 
-/* Desktops */
-@media (min-width: 81rem) {
-  .contact-content {
-    max-width: 60%;
+/* Desktops Médios */
+@media (min-width: 64rem) {
+  .contact__title {
+    font-size: var(--lg-title-size);
+  }
+
+  .contact__subtitle,
+  .contact__social {
+    font-size: clamp(1em, 2vw, 3em);
+    max-width: 100%;
+  }
+
+  .contact__cta {
+    font-size: clamp(1em, 2vw, 1.5em);
+  }
+
+  .contact__link,
+  .contact__separator {
+    font-size: 1.2em;
   }
 }
+
+/* 
+<section class="contact" id="contact">
+    <div class="contact-content content">
+      <h2 class="contact__title">Tem uma oportunidade em mente?</h2>
+      <a href="mailto:kevinterezadev@gmail.com?subject=Contato%20via%20Portfólio&body=Olá,%20Kevin!%20Tudo%20bem?%20Conheci%20seu%20trabalho%20através%20do%20seu%20portfólio%20e%20gostaria%20de%20conversar%20com%20você."
+        class="contact__cta">Vamos
+        conversar!</a>
+      <h3 class="contact__social">Conecte-se comigo</h3>
+      <a href="https://github.com/kevinterezadev" class="contact__link">GitHub</a>
+      <a href="https://www.linkedin.com/in/kevinterezadev/" class="contact__link">LinkedIn</a>
+    </div>
+  </section>
+*/

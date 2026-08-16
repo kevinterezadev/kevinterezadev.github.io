@@ -8,8 +8,11 @@
   --font-body: "Inter", sans-serif;
 
   /* ---------- Tamanho de Texto ---------- */
-  --sm-font-size: clamp(0.875em, 4vw, 1.125em);
-  --md-font-size: clamp(0.75em, 2vw, 1.5em);
+  --sm-text-size: clamp(0.875em, 4vw, 1.125em);
+  --md-text-size: clamp(0.75em, 2vw, 1.5em);
+  --sm-title-size: clamp(1.5em, 8vw, 4.5em);
+  --md-title-size: clamp(1.5em, 5vw, 3.5em);
+  --lg-title-size: clamp(1.5em, 3vw, 3.5em);
 
   /* ---------- Cores ---------- */
   --color-primary: #e11d48;
@@ -25,7 +28,5 @@
     0 0 8rem rgba(225, 29, 72, 0.2);
 
   /* ---------- Espaçamentos ---------- */
-  --sm-padding-section: 2rem;
-  --md-padding-section: 6rem;
-  --lg-padding-section: 8rem;
+  --padding-section: 2rem;
 }
