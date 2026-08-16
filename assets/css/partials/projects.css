@@ -148,7 +148,6 @@
 }
 
 .projects__btn--deploy:hover {
-  background-color: var(--color-primary);
   box-shadow: 0 0.5rem 1.5rem rgba(225, 29, 72, 0.4);
 }
 

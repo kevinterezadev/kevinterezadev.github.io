@@ -1,7 +1,6 @@
 # 💼 Portfólio - Kevin Tereza
 
-Meu portfólio pessoal desenvolvido do zero com **HTML**, **CSS** e **JavaScript**, apresentando meus principais projetos e informações sobre mim.  
-O objetivo é demonstrar minhas habilidades em desenvolvimento **Front-End**, com foco em **interfaces modernas, responsivas e acessíveis**.
+Meu portfólio pessoal desenvolvido do zero com **HTML**, **CSS** e **JavaScript**, apresentando meus principais projetos e informações sobre mim. O objetivo é demonstrar minhas habilidades em desenvolvimento **Web**, com foco em **interfaces modernas, responsivas e acessíveis**.
 
 ## 🚀 Tecnologias Utilizadas
 
@@ -15,7 +14,7 @@ O objetivo é demonstrar minhas habilidades em desenvolvimento **Front-End**, co
 
 ## 🔗 Link para o Deploy
 
-[Acesse o projeto na Vercel](https://kevinterezadev.vercel.app/)
+[Acesse o projeto no GitHub Pages](https://kevinterezadev.github.io/)
 
 ## 🔧 Rodar localmente
 
@@ -24,13 +23,13 @@ Caso queira visualizar ou modificar o código localmente:
 1. **Clone o repositório:**
 
    ```bash
-   git clone https://github.com/KevinTereza/portfolio.git
+   git clone https://github.com/kevinterezadev/kevinterezadev.github.io.git
    ```
 
 2. **Acesse o diretório do projeto:**
 
    ```bash
-   cd portfolio
+   cd kevinterezadev.github.io
    ```
 
 3. **Abra o arquivo `index.html` para visualizar o projeto.**

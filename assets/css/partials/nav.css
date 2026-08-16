@@ -57,15 +57,17 @@
 }
 
 .nav__link {
+  position: relative;
+  display: inline-block;
   color: var(--color-text-primary);
   font-size: clamp(1em, 5vw, 1.5em);
   padding: 1em;
-  transition: 0.3s;
+  transition: 0.25s ease;
 }
 
 .nav__link:hover {
-  letter-spacing: 3px;
-  text-shadow: 0 0 5px var(--color-text-primary);
+  color: var(--color-primary);
+  transform: scale(0.95);
 }
 
 /* ---------- Botão Hamburguer ---------- */
@@ -131,6 +133,29 @@
   .nav__link {
     font-size: 1.125em;
     padding: 0;
+  }
+
+  .nav__link::after {
+    content: "";
+    position: absolute;
+    left: 0.5em;
+    right: 0.5em;
+    bottom: -0.25rem;
+
+    height: 2px;
+    background-color: var(--color-primary);
+
+    transform: scaleX(0);
+    transform-origin: bottom;
+    transition: transform 0.25s ease;
+  }
+
+  .nav__link:hover {
+    color: var(--color-accent-light);
+  }
+
+  .nav__link:hover::after {
+    transform: scaleX(1);
   }
 
   .nav__hamburguer {
