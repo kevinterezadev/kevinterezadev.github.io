@@ -114,17 +114,29 @@
   background: url(/assets/images/partials/projects/css3-original.svg) center /
     contain no-repeat;
 }
+.projects__tech--sass::before {
+  background: url(/assets/images/partials/projects/sass-original.svg) center /
+    contain no-repeat;
+}
 .projects__tech--tailwind::before {
   background: url(/assets/images/partials/projects/tailwindcss-original.svg)
+    center / contain no-repeat;
+}
+.projects__tech--bootstrap::before {
+  background: url(/assets/images/partials/projects/bootstrap-original.svg)
     center / contain no-repeat;
 }
 .projects__tech--js::before {
   background: url(/assets/images/partials/projects/javascript-original.svg)
     center / contain no-repeat;
 }
-.projects__tech--react::before {
-  background: url(/assets/images/partials/projects/react-original.svg) center /
-    contain no-repeat;
+.projects__tech--ts::before {
+  background: url(/assets/images/partials/projects/typescript-original.svg)
+    center / contain no-repeat;
+}
+.projects__tech--angular::before {
+  background: url(/assets/images/partials/projects/angular-original.svg)
+    center / contain no-repeat;
 }
 
 .projects__btn {
@@ -209,6 +221,7 @@
 
   .projects__name {
     font-size: clamp(1.8em, 1em + 2vw, 2.5em);
+    max-width: 14ch;
   }
 
   .projects__description {
@@ -217,7 +230,7 @@
   }
 
   .projects__tech {
-    font-size: clamp(0.625em, 1vw, 0.875em);
+    font-size: clamp(0.625em, 0.8vw, 0.75em);
     padding: 0.625rem;
   }
 
